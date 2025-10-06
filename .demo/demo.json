@@ -1,0 +1,158 @@
+{
+  "$schema": "https://demotime.show/demo-time.schema.json",
+  "title": "GitHub Spec Kit: From Intent to Implementation",
+  "description": "Structuring AI for Predictable, High-Quality Software",
+  "version": 2,
+  "demos": [
+    {
+      "id": "slide-01",
+      "title": "Title",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/01-title.md"
+        }
+      ]
+    },
+    {
+      "id": "slide-02",
+      "title": "The New Reality",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/02-new-reality.md"
+        }
+      ]
+    },
+    {
+      "id": "slide-03",
+      "title": "Vibe Coding Problem",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/03-vibe-coding-problem.md"
+        }
+      ]
+    },
+    {
+      "id": "slide-04",
+      "title": "Spec-Driven Development",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/04-spec-driven-development.md"
+        }
+      ]
+    },
+    {
+      "id": "slide-05",
+      "title": "Executable Intent",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/05-executable-intent.md"
+        }
+      ]
+    },
+    {
+      "id": "slide-06",
+      "title": "GitHub Spec Kit",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/06-github-spec-kit.md"
+        }
+      ]
+    },
+    {
+      "id": "slide-07",
+      "title": "Four-Phase Workflow",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/07-four-phase-workflow.md"
+        }
+      ]
+    },
+    {
+      "id": "slide-08",
+      "title": "Enterprise Governance",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/08-enterprise-governance.md"
+        }
+      ]
+    },
+    {
+      "id": "slide-09",
+      "title": "Live Demo",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/09-live-demo.md"
+        }
+      ]
+    },
+    {
+      "id": "slide-10",
+      "title": "Demo Recap",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/10-demo-recap.md"
+        }
+      ]
+    },
+    {
+      "id": "slide-11",
+      "title": "Strategic Value",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/11-strategic-value.md"
+        }
+      ]
+    },
+    {
+      "id": "slide-12",
+      "title": "Benefits Across Org",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/12-benefits-across-org.md"
+        }
+      ]
+    },
+    {
+      "id": "slide-13",
+      "title": "Road Ahead",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/13-road-ahead.md"
+        }
+      ]
+    },
+    {
+      "id": "slide-14",
+      "title": "Key Takeaways",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/14-key-takeaways.md"
+        }
+      ]
+    },
+    {
+      "id": "slide-15",
+      "title": "Q&A",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/15-qa.md"
+        }
+      ]
+    }
+  ]
+}

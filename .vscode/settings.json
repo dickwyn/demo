@@ -15,5 +15,9 @@
 		"titleBar.inactiveForeground": "#e7e7e799"
 	},
 	"peacock.color": "#0d6c92",
-	"demoTime.defaultFileType": "json"
+	"demoTime.defaultFileType": "json",
+	"demoTime.previousEnabled": true,
+	"workbench.statusBar.visible": true,
+	"workbench.editor.showTabs": "multiple",
+	"workbench.activityBar.location": "bottom"
 }
