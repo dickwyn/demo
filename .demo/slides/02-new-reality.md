@@ -3,24 +3,21 @@ theme: default
 layout: default
 ---
 
-# The New Reality
-## The Age of AI Co-Pilots
+# The Problem with Current AI Coding
 
-### 📊 Massive Adoption
+### 🤖 AI is everywhere, but...
 
-- **41%** of all code is now AI-generated
-- **76%** of developers use or plan to use AI tools
+- **Unstructured prompts** lead to unpredictable results
+- Complexity pushed to debugging and maintenance
 
-### ⚡ The Productivity Paradox
+### ❌ "Vibe Coding" Fails
 
-Generating more code, faster — **But complexity hasn't decreased**
+```
+"add photo sharing to my app"
+```
 
-### 💸 The Hidden Cost
+**AI makes thousands of assumptions:**
+- User roles? Security model? Data storage?
+- Error handling? Validation? Performance?
 
-Complexity pushed to later stages: Debugging • Testing • Maintenance
-
-### 🚨 Alarming Trends
-
-- **4x increase** in code duplication
-- Rise in disposable code  
-- Decline in sustainable design
+### ✅ We need structure, not just smarter prompts
