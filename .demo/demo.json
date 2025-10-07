@@ -6,101 +6,101 @@
   "demos": [
     {
       "id": "slide-01",
-      "title": "Title",
+      "title": "1",
       "steps": [
         {
           "action": "openSlide",
-          "path": ".demo/slides/01-title.md"
+          "path": ".demo/slides/01.md"
         }
       ]
     },
     {
       "id": "slide-02",
-      "title": "The New Reality",
+      "title": "2",
       "steps": [
         {
           "action": "openSlide",
-          "path": ".demo/slides/02-new-reality.md"
+          "path": ".demo/slides/02.md"
         }
       ]
     },
-    {
-      "id": "demo-mgftpwfx-5ad1",
-      "title": "Quote",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": ".demo/slides/02-1-quote.md"
-        }
-      ]
-    },
-    {
-      "id": "slide-03-1",
-      "title": "SDD",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": ".demo/slides/03-1-sdd.md"
-        }
-      ]
-    },
-		{
-			"id": "slide-05",
-			"title": "Spec-Driven Development",
-			"steps": [
-				{
-					"action": "openSlide",
-					"path": ".demo/slides/05-spec-driven-development.md"
-				}
-			]
-		},
     {
       "id": "slide-03",
-      "title": "GitHub Spec Kit vs Traditional AI",
+      "title": "3",
       "steps": [
         {
           "action": "openSlide",
-          "path": ".demo/slides/03-github-spec-kit-vs-traditional.md"
+          "path": ".demo/slides/03.md"
         }
       ]
     },
     {
       "id": "slide-04",
-      "title": "Traditional AI vs Spec Kit",
+      "title": "4",
       "steps": [
         {
           "action": "openSlide",
-          "path": ".demo/slides/04-traditional-ai-vs-spec-kit.md"
+          "path": ".demo/slides/04.md"
+        }
+      ]
+    },
+    {
+      "id": "slide-05",
+      "title": "5",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/05.md"
         }
       ]
     },
     {
       "id": "slide-06",
-      "title": "GitHub Spec Kit Workflow",
+      "title": "6",
       "steps": [
         {
           "action": "openSlide",
-          "path": ".demo/slides/06-github-spec-kit-workflow.md"
+          "path": ".demo/slides/06.md"
         }
       ]
     },
     {
       "id": "slide-07",
-      "title": "Workflow Commands (cont.)",
+      "title": "7",
       "steps": [
         {
           "action": "openSlide",
-          "path": ".demo/slides/07-workflow-commands-cont.md"
+          "path": ".demo/slides/07.md"
         }
       ]
     },
     {
-      "id": "slide-11",
-      "title": "Next Steps",
+      "id": "slide-08",
+      "title": "8",
       "steps": [
         {
           "action": "openSlide",
-          "path": ".demo/slides/11-next-steps.md"
+          "path": ".demo/slides/08.md"
+        }
+      ]
+    },
+    {
+      "id": "slide-09",
+      "title": "9",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/09.md"
+        }
+      ]
+    },
+    {
+      "id": "slide-10",
+      "title": "10",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/10.md"
         }
       ]
     }
