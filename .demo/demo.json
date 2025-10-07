@@ -103,6 +103,16 @@
           "path": ".demo/slides/10.md"
         }
       ]
+    },
+    {
+      "id": "slide-11",
+      "title": "11",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/11.md"
+        }
+      ]
     }
   ]
 }
