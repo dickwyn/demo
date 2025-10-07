@@ -3,6 +3,7 @@ theme: default
 layout: default
 ---
 
+
 # GitHub Spec Kit
 
 ### Open-source framework for structured AI development

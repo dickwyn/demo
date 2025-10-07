@@ -25,6 +25,16 @@
       ]
     },
     {
+      "id": "demo-mgftpwfx-5ad1",
+      "title": "Quote",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/02-1-quote.md"
+        }
+      ]
+    },
+    {
       "id": "slide-03",
       "title": "GitHub Spec Kit vs Traditional AI",
       "steps": [
@@ -46,7 +56,7 @@
     },
     {
       "id": "slide-05",
-      "title": "Spec-Driven Development", 
+      "title": "Spec-Driven Development",
       "steps": [
         {
           "action": "openSlide",
@@ -85,108 +95,6 @@
       ]
     },
     {
-      "id": "demo-setup",
-      "title": "Demo: Setup",
-      "steps": [
-        {
-          "action": "openTerminal"
-        },
-        {
-          "action": "executeTerminalCommand",
-          "command": "mkdir task-manager-demo && cd task-manager-demo"
-        },
-        {
-          "action": "executeTerminalCommand", 
-          "command": "specify init . --ai copilot"
-        }
-      ]
-    },
-    {
-      "id": "demo-constitution",
-      "title": "Demo: Constitution",
-      "steps": [
-        {
-          "action": "create",
-          "path": "constitution.md",
-          "content": "# Project Constitution\n\n## Code Quality Standards\n- Use React with TypeScript for type safety\n- All components must have unit tests with Jest\n- Follow WCAG accessibility guidelines\n- Use semantic HTML elements\n\n## Architecture Principles  \n- Components should be functional with hooks\n- Separate concerns: logic, presentation, styling\n- Use local state management (no external dependencies)\n- Error boundaries for graceful failures\n\n## Development Practices\n- Write tests before implementation\n- Use descriptive variable and function names\n- Include JSDoc comments for public interfaces\n- Maintain consistent code formatting"
-        },
-        {
-          "action": "open",
-          "path": "constitution.md"
-        }
-      ]
-    },
-    {
-      "id": "demo-specify",
-      "title": "Demo: Specify Requirements", 
-      "steps": [
-        {
-          "action": "create",
-          "path": "spec.md",
-          "content": "# Task Manager Component Specification\n\n## Overview\nA React component that allows users to manage a simple task list with basic CRUD operations.\n\n## User Stories\n\n### As a user, I want to add new tasks\n- I can type in an input field\n- I can press Enter or click \"Add\" to create a task\n- Input clears after adding\n- New tasks appear at the bottom of the list\n\n### As a user, I want to view my task list\n- Tasks display in chronological order (newest last)\n- Each task shows: text content, completion status\n- Empty state shows \"No tasks yet\" message\n\n### As a user, I want to mark tasks as complete\n- I can click a checkbox to toggle completion\n- Completed tasks show strikethrough text\n- Completion state persists during session\n\n### As a user, I want to delete tasks\n- Each task has a delete button (×)\n- Clicking delete removes task immediately\n- No confirmation dialog needed\n\n## Acceptance Criteria\n- Component renders without errors\n- All interactions work via keyboard and mouse\n- Component is accessible to screen readers\n- State updates are immediate and consistent"
-        },
-        {
-          "action": "open", 
-          "path": "spec.md"
-        }
-      ]
-    },
-    {
-      "id": "demo-plan",
-      "title": "Demo: Technical Plan",
-      "steps": [
-        {
-          "action": "create",
-          "path": "plan.md", 
-          "content": "# Task Manager Implementation Plan\n\n## Architecture Overview\n\n### Component Structure\n```\nTaskManager/\n├── TaskManager.tsx      # Main component\n├── TaskManager.test.tsx # Unit tests\n├── TaskItem.tsx         # Individual task component \n├── TaskItem.test.tsx    # Task item tests\n└── types.ts            # TypeScript interfaces\n```\n\n### Data Model\n```typescript\ninterface Task {\n  id: string;\n  text: string;\n  completed: boolean;\n  createdAt: Date;\n}\n```\n\n### State Management\n- Use `useState` hook for task list\n- Use `useState` for input field value\n- Generate unique IDs with `crypto.randomUUID()`\n\n### Key Functions\n- `addTask(text: string): void`\n- `toggleTask(id: string): void` \n- `deleteTask(id: string): void`\n\n### Testing Strategy\n- Test component rendering\n- Test user interactions (add, toggle, delete)\n- Test accessibility attributes\n- Test edge cases (empty input, empty list)\n\n### Accessibility Features\n- Semantic HTML (`<form>`, `<ul>`, `<li>`)\n- ARIA labels for screen readers\n- Keyboard navigation support\n- Focus management"
-        },
-        {
-          "action": "open",
-          "path": "plan.md"
-        }
-      ]
-    },
-    {
-      "id": "demo-tasks",
-      "title": "Demo: Generate Tasks",
-      "steps": [
-        {
-          "action": "create",
-          "path": "tasks.md",
-          "content": "# Implementation Tasks\n\n## Task 1: Setup and Types\n- [ ] Create `types.ts` with Task interface\n- [ ] Setup basic project structure\n- [ ] Configure Jest testing environment\n\n## Task 2: TaskItem Component\n- [ ] Create `TaskItem.tsx` component\n- [ ] Implement checkbox for completion toggle\n- [ ] Add delete button with click handler\n- [ ] Style completed tasks with strikethrough\n- [ ] Add ARIA attributes for accessibility\n- [ ] Write unit tests for TaskItem\n\n## Task 3: Main TaskManager Component  \n- [ ] Create `TaskManager.tsx` with state management\n- [ ] Implement add task form with input field\n- [ ] Render task list using TaskItem components\n- [ ] Add empty state message\n- [ ] Implement task operations (add, toggle, delete)\n- [ ] Add keyboard event handlers\n\n## Task 4: Testing & Polish\n- [ ] Write comprehensive unit tests\n- [ ] Test accessibility with screen reader\n- [ ] Add error boundaries\n- [ ] Optimize performance with useCallback\n- [ ] Add TypeScript strict mode compliance\n\n## Task 5: Integration\n- [ ] Create demo app using TaskManager\n- [ ] Add basic styling for better UX\n- [ ] Test cross-browser compatibility\n- [ ] Document component API"
-        },
-        {
-          "action": "open",
-          "path": "tasks.md"
-        }
-      ]
-    },
-    {
-      "id": "demo-implement", 
-      "title": "Demo: Implementation",
-      "steps": [
-        {
-          "action": "create",
-          "path": "src/types.ts",
-          "content": "export interface Task {\n  id: string;\n  text: string;\n  completed: boolean;\n  createdAt: Date;\n}"
-        },
-        {
-          "action": "create",
-          "path": "src/TaskItem.tsx",
-          "content": "import React from 'react';\nimport { Task } from './types';\n\ninterface TaskItemProps {\n  task: Task;\n  onToggle: (id: string) => void;\n  onDelete: (id: string) => void;\n}\n\nconst TaskItem: React.FC<TaskItemProps> = ({ task, onToggle, onDelete }) => {\n  return (\n    <li className=\"task-item\">\n      <label className=\"task-label\">\n        <input\n          type=\"checkbox\"\n          checked={task.completed}\n          onChange={() => onToggle(task.id)}\n          aria-describedby={`task-${task.id}`}\n        />\n        <span \n          id={`task-${task.id}`}\n          className={task.completed ? 'completed' : ''}\n        >\n          {task.text}\n        </span>\n      </label>\n      <button\n        onClick={() => onDelete(task.id)}\n        aria-label={`Delete task: ${task.text}`}\n        className=\"delete-button\"\n      >\n        ×\n      </button>\n    </li>\n  );\n};\n\nexport default TaskItem;"
-        },
-        {
-          "action": "create",
-          "path": "src/TaskManager.tsx", 
-          "content": "import React, { useState, useCallback } from 'react';\nimport TaskItem from './TaskItem';\nimport { Task } from './types';\n\nconst TaskManager: React.FC = () => {\n  const [tasks, setTasks] = useState<Task[]>([]);\n  const [inputValue, setInputValue] = useState('');\n\n  const addTask = useCallback((text: string) => {\n    if (text.trim()) {\n      const newTask: Task = {\n        id: crypto.randomUUID(),\n        text: text.trim(),\n        completed: false,\n        createdAt: new Date()\n      };\n      setTasks(prev => [...prev, newTask]);\n      setInputValue('');\n    }\n  }, []);\n\n  const toggleTask = useCallback((id: string) => {\n    setTasks(prev => prev.map(task => \n      task.id === id ? { ...task, completed: !task.completed } : task\n    ));\n  }, []);\n\n  const deleteTask = useCallback((id: string) => {\n    setTasks(prev => prev.filter(task => task.id !== id));\n  }, []);\n\n  const handleSubmit = (e: React.FormEvent) => {\n    e.preventDefault();\n    addTask(inputValue);\n  };\n\n  return (\n    <div className=\"task-manager\">\n      <h1>Task Manager</h1>\n      \n      <form onSubmit={handleSubmit} className=\"add-task-form\">\n        <input\n          type=\"text\"\n          value={inputValue}\n          onChange={(e) => setInputValue(e.target.value)}\n          placeholder=\"Add a new task...\"\n          aria-label=\"New task input\"\n        />\n        <button type=\"submit\">Add Task</button>\n      </form>\n\n      {tasks.length === 0 ? (\n        <p className=\"empty-state\">No tasks yet. Add one above!</p>\n      ) : (\n        <ul className=\"task-list\" role=\"list\">\n          {tasks.map(task => (\n            <TaskItem\n              key={task.id}\n              task={task}\n              onToggle={toggleTask}\n              onDelete={deleteTask}\n            />\n          ))}\n        </ul>\n      )}\n    </div>\n  );\n};\n\nexport default TaskManager;"
-        },
-        {
-          "action": "open",
-          "path": "src/TaskManager.tsx"
-        }
-      ]
-    },
-    {
       "id": "slide-09",
       "title": "Demo Recap",
       "steps": [
@@ -213,16 +121,6 @@
         {
           "action": "openSlide",
           "path": ".demo/slides/11-next-steps.md"
-        }
-      ]
-    },
-    {
-      "id": "slide-12",
-      "title": "Get Started",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": ".demo/slides/12-get-started.md"
         }
       ]
     }

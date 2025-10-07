@@ -3,21 +3,13 @@ theme: default
 layout: default
 ---
 
-# The Problem with Current AI Coding
+# the problem with current AI coding
 
 ### 🤖 AI is everywhere, but...
 
-- **Unstructured prompts** lead to unpredictable results
-- Complexity pushed to debugging and maintenance
+- unstructured, ad-hoc prompting of AI coding assistants (e.g., "develop feature X that does Y")
+- AI agents lose track of past decisions, forcing us to repeat instructions
+- architectural decisions are trapped in chat logs or memory, leading to inconsistent code
+- variety of assumptions are made. security model? data storage? error handling?
+- that all leads to more time debugging and fixing misaligned assumptions than actually planning
 
-### ❌ "Vibe Coding" Fails
-
-```
-"add photo sharing to my app"
-```
-
-**AI makes thousands of assumptions:**
-- User roles? Security model? Data storage?
-- Error handling? Validation? Performance?
-
-### ✅ We need structure, not just smarter prompts
