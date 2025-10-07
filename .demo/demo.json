@@ -35,6 +35,26 @@
       ]
     },
     {
+      "id": "slide-03-1",
+      "title": "SDD",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/03-1-sdd.md"
+        }
+      ]
+    },
+		{
+			"id": "slide-05",
+			"title": "Spec-Driven Development",
+			"steps": [
+				{
+					"action": "openSlide",
+					"path": ".demo/slides/05-spec-driven-development.md"
+				}
+			]
+		},
+    {
       "id": "slide-03",
       "title": "GitHub Spec Kit vs Traditional AI",
       "steps": [
@@ -55,16 +75,6 @@
       ]
     },
     {
-      "id": "slide-05",
-      "title": "Spec-Driven Development",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": ".demo/slides/05-spec-driven-development.md"
-        }
-      ]
-    },
-    {
       "id": "slide-06",
       "title": "GitHub Spec Kit Workflow",
       "steps": [
@@ -81,36 +91,6 @@
         {
           "action": "openSlide",
           "path": ".demo/slides/07-workflow-commands-cont.md"
-        }
-      ]
-    },
-    {
-      "id": "slide-08",
-      "title": "Live Demo",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": ".demo/slides/08-live-demo.md"
-        }
-      ]
-    },
-    {
-      "id": "slide-09",
-      "title": "Demo Recap",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": ".demo/slides/09-demo-recap.md"
-        }
-      ]
-    },
-    {
-      "id": "slide-10",
-      "title": "Why This Matters",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": ".demo/slides/10-why-this-matters.md"
         }
       ]
     },

@@ -23,6 +23,3 @@ layout: default
 ```
 *AI builds the feature following the structured plan*
 
----
-
-**Your role: Guide each phase, review outputs, iterate as needed**

@@ -3,45 +3,43 @@ theme: default
 layout: two-columns
 ---
 
-# Traditional AI vs Spec Kit
+<br/>
 
-## ❌ "Vibe Coding"
+## prompting
 
 ```
-"Hey, build me a social photo sharing app.
-Users should be able to upload photos, 
+"hey, build me a social photo sharing app.
+users should be able to upload photos, 
 organize them into albums, and share with 
-friends. Make it modern and responsive.
-Oh, and add some AI features for tagging."
+friends. make it modern and responsive.
+oh, and add some AI features for tagging."
 ```
 
-**The model makes dozens of assumptions:**
-- Authentication method?
-- File storage solution?
+**the model makes dozens of assumptions:**
+- authentication method?
+- file storage solution?
 - API design?
-- Scaling requirements?
+- scaling requirements?
 
-**Result:** ⚠️ Code that works... sometimes
+**result:** ⚠️ code that works... sometimes
 
 ::right::
 
-<br>
-<br>
+## spec kit
 
-## ✅ Structured Approach
-
-**Constitution first:**
+**constitution first:**
 ```
 /constitution Security-first, WCAG compliant,
 React + TypeScript, comprehensive testing
 ```
 
-**Then systematic workflow:**
+**then systematic workflow:**
 ```
-/specify   → Detailed user stories
-/plan      → Technical architecture  
-/tasks     → Implementation roadmap
-/implement → Production-ready code
+/specify   → detailed user stories
+/clarify.  → clarify underspecified areas
+/plan      → technical architecture  
+/tasks     → implementation roadmap
+/implement → production-ready code
 ```
 
-**Result:** 🎯 Predictable, maintainable, documented software
+**result:** 🎯 predictable, maintainable, documented software
